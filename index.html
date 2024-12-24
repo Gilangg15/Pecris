@@ -84,17 +84,5 @@
     <footer class="crazy-footer">
         <p>&copy; Copyright 2024 $PECRIS. All rights reserved </p>
     </footer>
-
-    <script>
-        // Salin teks ke clipboard
-        document.getElementById("copy-button").addEventListener("click", function () {
-            const textToCopy = document.getElementById("copy-text").innerText;
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                alert("text has been successfully designed!");
-            }).catch(() => {
-                alert("failed to copy text.");
-            });
-        });
-    </script>
 </body>
 </html>
