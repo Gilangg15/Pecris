@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$PECRIS</title>
+    <link rel="icon" type="image/x-icon" href="img/img2.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="crazy-navbar">
+        <h1 class="logo">$PECRIS</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#memes">Memes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2 class="crazy-text">$PECRIS</h2>
+        </div>
+    </section>
+
+    <section id="memes" class="meme-gallery">
+        <h2 class="crazy-title">GALLERY PECRIS</h2>
+        <div class="meme-grid">
+            <!-- Meme Cards -->
+            <div class="meme crazy-border">
+                <div class="meme-images">
+                    <img src="img/img1.png">
+                    <img src="img/img2.png">
+                    <img src="img/img3.png">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="tokenomics" class="info-section">
+        <h2>TOKENOMICS</h2>
+        <p>Token Name = $PECRIS</p>
+        <p>TICKER = $PECRIS</p>
+        <p>TOTAL SUPPLY = 1,000,000,000</p>
+        <p>LIQUIDITY POOL BURNED = 100%</p>
+        <p>TAXES = 0%</p>
+    </section>
+
+    <section id="roadmap" class="info-section">
+        <h2>ROADMAP</h2>
+        <p>1. Define Goals and Objectives</p>
+        <p>2. Identify Steps and Phases</p>
+        <p>3. Schedule Tasks and Phases</p>
+        <p>4. Allocate Resources</p>
+        <p>5. Choose Roadmap Format</p>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>$PECRIS is a native utility token designed to facilitate seamless interaction
+            within a platform built on the Solana blockchain.</p>
+    </section>
+
+    <section id="socials" class="social-section">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+            <a href="#"><img src="https://www.freepnglogos.com/uploads/twitter-x-logo-png/twitter-x-logo-png-9.png"
+                    width="70px"></a>
+            <a href="#"><img src="https://logodownload.org/wp-content/uploads/2017/11/telegram-logo-8.png"
+                    width="70px"></a>
+            <a href="#"><img
+                    src="https://static.vecteezy.com/system/resources/previews/021/819/342/non_2x/fun-green-pill-free-png.png"
+                    width="70px"></a>
+        </div>
+    </section>
+
+    <section id="copy-text-section" class="copy-section">
+        <p id="copy-text">CA XXXXXXXXXXXXXXXXXXXX</p>
+        <button id="copy-button">Salin Teks</button>
+    </section>
+
+    <footer class="crazy-footer">
+        <p>&copy; Copyright 2024 $PECRIS. All rights reserved </p>
+    </footer>
+
+    <script>
+        // Salin teks ke clipboard
+        document.getElementById("copy-button").addEventListener("click", function () {
+            const textToCopy = document.getElementById("copy-text").innerText;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert("Teks berhasil disalin!");
+            }).catch(() => {
+                alert("Gagal menyalin teks.");
+            });
+        });
+    </script>
+</body>
+
+</html>
